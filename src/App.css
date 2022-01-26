@@ -1,38 +1,112 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.info{
+  line-height: 60px;
+  text-align: center;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.info h3{
+  text-align: center;
+  margin-top: -8px;
+  font-size: 20px;
+}
+.info h3 a{
+  text-decoration: none;
+
+}
+.info > .detailInfo{
+  display: flex;
+  width: 170px;
+  border: 1px solid #242e4a;
+  box-shadow: gray;
+  padding: -10px;
+  margin-left: 10px;
+  line-height: 40px;  
+  margin-top: -17px;
+} 
+.info > .detailInfo > .dtinfo p{font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 18px;
+  margin-bottom: -25px;
+  margin-top: -5px;
+  font-weight: bold;
+}
+.info > .detailInfo > .dtinfo a{
+  color: #0f4cf1;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.info > .detailInfo img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-top: 6px;
+  margin-left: 4px;
+}
+.cryptoSearch {
+  background-color: yellow;
+  height: 200px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: -8px;
+}
+.cryptoSearch input{
+  width: 30%;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.cryptoDisplay {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: unset;
+  flex-wrap: wrap;
+}
+.coinDetail {
+  width: 400px;
+  height: 300px;
+  background-color: #242e4a;
   color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+.coinDetail img{
+  height: 100px;
+}
+.cryptofooter{
+  width: 100%;
+  height: 80px;
+  background-color: #242e4a;
+  margin-right: -8px ;
+ 
+}
+.cryptofooter p{
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 375px) {
+  .cryptoSearch input {
+      width: 70%;
+      height: 40px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
