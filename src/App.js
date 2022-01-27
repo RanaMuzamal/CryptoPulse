@@ -15,7 +15,7 @@ function App() {
     })
   }, []);
   const filteredWord = ListofCoin.filter((coin) => {
-    return coin.name.toLowerCase().includes(searchedWord.toLowerCase())
+    return coin.symbol.toLowerCase().includes(searchedWord.toLowerCase())
   })
   return (
     <div className="App">
